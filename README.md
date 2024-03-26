@@ -23,3 +23,11 @@ The code will generate a data file called "**Indicator_IVS**" at the end.
 
 ## IVS2020
 1. calcuate the standard gender gap, mean of GDP and GGGI for each country for 2010 and beyond.
+
+The code will generate a data file called "**Indicator_IVS_2**" at the end.
+
+## analysis_IVS_3
+data analysis includes
+1. getting the correlation of std_gg and GDP
+2. getting the correlation of std_gg and GGGI
+3. a rough pca analysis
