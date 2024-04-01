@@ -1,7 +1,7 @@
 
 clear
 *cd "F:\Users\thomas\Dropbox\Breda_Cimpian_Napp\Build_large_dataset"
-cd ~/Desktop/Thesis/Stata/DataIVS
+cd ~/Desktop/Thesis/Stata/IVS
 
 cap log c
 log using first_analysis.log, replace
@@ -53,7 +53,7 @@ gen cor_GDP=`r(rho)'
 pwcorr std_gg gggi
 gen cor_gggi=`r(rho)'
 
-keep question mean nb_obs share_pos mean_GDP nb_obs_GDP share_pos_GDP   mean_gggi nb_obs_gggi share_pos_gggi cor_GDP  cor_gggi min_min max_max qt_label CONTENT meaning0 meaning1 meaning2 meaning3 meaning4 meaning5 meaning6 meaning7 meaning8 meaning9 meaning10 
+keep question mean nb_obs share_pos mean_GDP nb_obs_GDP share_pos_GDP   mean_gggi nb_obs_gggi share_pos_gggi cor_GDP  cor_gggi min_min max_max qt_label Content meaning0 meaning1 meaning2 meaning3 meaning4 meaning5 meaning6 meaning7 meaning8 meaning9 meaning10 
 
 keep in 1
 append using IVS_corr
@@ -65,7 +65,7 @@ use IVS_corr, clear
 
 gen GEP_GDP= cor_GDP* sign(mean_GDP)
 gen GEP_gggi= cor_gggi* sign(mean_gggi)
-order CONTENT question qt_label GEP_GDP  cor_GDP  mean_GDP nb_obs_GDP share_pos_GDP  GEP_gggi cor_gggi  mean_gggi nb_obs_gggi share_pos_gggi mean nb_obs share_pos min_min max_max meaning0 meaning1 meaning2 meaning3 meaning4 meaning5 meaning6 meaning7 meaning8 meaning9 meaning10 
+order Content question qt_label GEP_GDP  cor_GDP  mean_GDP nb_obs_GDP share_pos_GDP  GEP_gggi cor_gggi  mean_gggi nb_obs_gggi share_pos_gggi mean nb_obs share_pos min_min max_max meaning0 meaning1 meaning2 meaning3 meaning4 meaning5 meaning6 meaning7 meaning8 meaning9 meaning10 
 
 duplicates report question
 sort GEP_GDP
@@ -134,7 +134,7 @@ cap log using pca_file.log, replace
 
 ***** 1) PCA for 15 largest GEP for GDP (with at least 40 country obs)
 clear
-cd ~/Desktop/Thesis/Stata/DataIVS
+cd ~/Desktop/Thesis/Stata/IVS
 
 
 ************some rough analysis of gender gap
@@ -148,8 +148,8 @@ sum GEP_gggi, d
 
 gsort GEP_GDP
 
-*show number of questions in each content
-tab CONTENT
+*show number of questions in each Content
+tab Content
 
 
 

@@ -1,8 +1,8 @@
 clear
-cd ~/Desktop/Thesis/Stata/DataIVS
+cd ~/Desktop/Thesis/Stata/IVS
 use Indicator_IVS, clear
 
-drop if Year<2010
+
 drop if mean_men==0 & mean_women==0
 
 
