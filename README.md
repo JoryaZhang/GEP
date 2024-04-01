@@ -11,8 +11,10 @@ WVS: doi:10.14281/18241.23
 then run ZA7503_EVS_WVS_Merge_Syntax_stata.do to compile the Integrated_values_surveys_1981-2022
 
 GGGI Data Download: https://prosperitydata360.worldbank.org/en/indicator/WEF+GGR+INDEX
+Downloaded excel **"WEF-GGR.xlsx"** is included in the file
 
-Annual GDP: https://data.worldbank.org/indicator/NY.GDP.MKTP.CD
+Annual GDP Download: https://data.worldbank.org/indicator/NY.GDP.MKTP.CD
+Downloaded excel **"API_NY.GDP.MKTP.CD_DS2_en_excel_v2_93.xls"** is included in the file
 
 
 ## IVS_loop
