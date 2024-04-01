@@ -9,6 +9,12 @@ EVS: doi:10.4232/1.14021
 WVS: doi:10.14281/18241.23
 
 then run ZA7503_EVS_WVS_Merge_Syntax_stata.do to compile the Integrated_values_surveys_1981-2022
+
+GGGI Data Download: https://prosperitydata360.worldbank.org/en/indicator/WEF+GGR+INDEX
+
+Annual GDP: https://data.worldbank.org/indicator/NY.GDP.MKTP.CD
+
+
 ## IVS_loop
 1. calculate the initial parameters: weighted mean , weighted standard deviation , share of min and max of IVS.
 2. generate the labelbook
